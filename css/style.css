@@ -1,7 +1,52 @@
 * {
-    background-color: #1abc9c;
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
 }
 
+
+ul{
+    display: flex;
+    background-color: #1abc9c;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 4vw;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 2rem;¨
+    font-family:'Libre Baskerville', serif ;
+    padding: 100px;
+  
+}
+section{
+    flex-direction: column;
+    background-color: #98c1b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 620px;
+}
+img{
+    height: 200px;
+    width: auto;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+
+#omoss{
+    color: #fcffff;
+    font-size: 120px;
+    position: absolute;
+    top: 120px; left: 410px;;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

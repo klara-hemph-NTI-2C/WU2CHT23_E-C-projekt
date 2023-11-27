@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\Webbutveckling\\6 nov"
+		},
+		{
+			"path": "..\\..\\..\\Webbutveckling\\2 okt\\mitt projekt"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "GitHub"
+	}
+}
