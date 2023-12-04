@@ -6,7 +6,7 @@
 
 h1{
     font-size: 80px;
-    background-image: linear-gradient(to bottom, #1abc9c, #50d6cf, #9df5de, #dbeafe, #ffffff);
+    background-image: linear-gradient(to bottom, #1abc9c, #50d6cf, #9df5de, #dbfefd, #ffffff);
 }
 
 
@@ -62,6 +62,3 @@ p{
 
 }
 
-body{
-    background-image: url("img/bakgrund.jpg");
-}
