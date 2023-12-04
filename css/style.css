@@ -4,6 +4,11 @@
     margin: 0%;
 }
 
+h1{
+    font-size: 80px;
+    background-image: linear-gradient(to bottom, #1abc9c, #50d6cf, #9df5de, #dbeafe, #ffffff);
+}
+
 
 ul{
     display: flex;
@@ -45,8 +50,18 @@ div{
     color: #fcffff;
     font-size: 120px;
     position: absolute;
-    top: 120px; left: 410px;;
+    top: 120px; left: 400px;;
 }
 p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#rec{
+    color: #fcffff;
+    font-size: 80px;
+
+}
+
+body{
+    background-image: url("img/bakgrund.jpg");
 }
