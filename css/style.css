@@ -1,3 +1,86 @@
+
+#wrapper {
+    display: grid;
+    grid-gap: 30px;
+    width: 100hh;
+    height: 100vh;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas: 
+    "oss oss"
+    "gen the";
+}
+#varatjanster-wrapped{
+    display: grid;
+    width: 100hh;
+    height: 100vh;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70px 1fr 1fr;
+    grid-template-areas: 
+    "var var var"
+    "ar1 ar2 ar3"
+    "ar4 ar5 ar6"
+    ;
+
+}
+
+#varatjanster{
+    grid-area: var;
+    background-color: fuchsia;
+}
+
+#article1{
+    grid-area: ar1;
+    background-color: #1abc9c;
+}
+
+#article2{
+    grid-area: ar2;
+    background-color: chartreuse;
+}
+
+#article3{
+    grid-area: ar3;
+    background-color: darkgrey;
+}
+
+#article4{
+    grid-area: ar4;
+    background-color: darkgreen;
+}
+
+#article5{
+    grid-area: ar5;
+    background-color: darkolivegreen;
+}
+
+#article6{
+    grid-area: ar6;
+    background-color: maroon;
+}
+
+#medoss{
+    grid-area: oss;
+    padding: 30px;
+}
+
+#general{
+    grid-area: gen;
+    background-color: #98c1b9;
+    width: 100%;
+    border-radius: 40px;
+    padding: 30px;
+}
+
+#therapist{
+    grid-area: the;
+    background-color: darkgoldenrod;
+    width: 100%;
+    border-radius: 40px;
+    padding: 40px;
+}
+
 * {
     box-sizing: border-box;
     padding: 0%;
@@ -7,6 +90,13 @@
 h1{
     font-size: 80px;
     background-image: linear-gradient(to bottom, #1abc9c, #50d6cf, #9df5de, #dbfefd, #ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1abc9c;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 10px;
+
 }
 
 
@@ -50,7 +140,7 @@ div{
     color: #fcffff;
     font-size: 120px;
     position: absolute;
-    top: 120px; left: 400px;;
+    top: 160px; left: 400px;;
 }
 p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
