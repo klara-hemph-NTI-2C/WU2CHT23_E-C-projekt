@@ -1,87 +1,39 @@
-
 #wrapper {
     display: grid;
     grid-gap: 30px;
-    width: 100hh;
+    width: 100vw;
     height: 100vh;
-    grid-template-columns: 1fr 1fr;
+
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     grid-template-rows: 70px 1fr;
     grid-template-areas: 
     "oss oss"
     "gen the"
     ;
 }
-#varatjanster-wrapped{
-    display: grid;
-    width: 100hh;
-    height: 100vh;
-    grid-gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 70px 1fr 1fr;
-    justify-content: flex-end;
-    grid-template-areas: 
-    "var var var"
-    "ar1 ar2 ar3"
-    "ar4 ar5 ar6"
-    ;
 
+#star{
+    display: flex;
+    flex-direction: row;
 }
 
-.vara {
-   width: 400px; 
-   height: auto;
-   inset: 1px 250px 1px px;
+.chatt-text{
+    background-color: #1abc9c;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    
 }
-
-#varatjanster{
-    grid-area: var;
-    background-color: fuchsia;
-    border-color: #1abc9c;
-}
-
-#article1{
-    grid-area: ar1;
-    border-radius: 38px;
-    border-color: #1abc9c;
-    border-style: solid;
-}
-
-#article2{
-    grid-area: ar2;
-    border-radius: 40px;
-    border-color: #1abc9c;
-    border-style: solid;
-}
-
-#article3{
-    grid-area: ar3;
-    border-radius: 40px;
-    border-color: #1abc9c;
-    border-style: solid;
-
-}
-
-#article4{
-    grid-area: ar4;
-    border-radius: 40px;
-    border-color: #1abc9c;
-    border-style: solid;
-
-}
-
-#article5{
-    grid-area: ar5;
-    border-radius: 40px;
-    border-color: #1abc9c;
-    border-style: solid;
-
-}
-
-#article6{
-    grid-area: ar6;
-    border-radius: 40px;
-    border-color: #1abc9c;
-    border-style: solid;
+.chatt{
+    font-size: 2rem;
+    color: #1abc9c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 #medoss{
@@ -97,6 +49,7 @@
     border-style: solid;
     border-color: #1abc9c;
     border-width: 5px;
+    background-color: #ffffff;
 }
 
 #therapist{
@@ -107,6 +60,7 @@
     border-style: solid;
     border-color: #1abc9c;
     border-width: 5px;
+    background-color: #ffffff;
 
 }
 
@@ -114,15 +68,16 @@
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
+    background-color: #bae0e7;
 }
 
 h1{
     font-size: 80px;
-    background-image: linear-gradient(to bottom, #1abc9c, #50d6cf, #9df5de, #dbfefd, #ffffff);
+    background-image: linear-gradient(to bottom, #1abc9c, #50d6cf, #9df5de, #baf3f1, #bae0e7);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #000000;
+    color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-bottom: 10px;
 
@@ -141,10 +96,14 @@ ul{
 
 a{
     text-decoration: none;
-    color: aliceblue;
-    font-size: 2rem;¨
-    font-family:'Libre Baskerville', serif ;
-    padding: 100px;
+    color: #ffffff;
+    font-size: 2rem; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 0px;
+    font-weight: bold;
+    background-color: #1abc9c;
   
 }
 section{
@@ -169,15 +128,98 @@ div{
     color: #fcffff;
     font-size: 120px;
     position: absolute;
-    top: 160px; left: 400px;;
+    top: 160px; left: 390px;
+    background-color: transparent;
 }
+
 p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
 }
 
 #rec{
     color: #fcffff;
     font-size: 80px;
+    padding: 0px 20px 0px 20px;
 
 }
 
+
+#varatjanster-wrapper {
+    display: grid;
+    height: 100vh;
+    grid-gap: 30px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: 70px 1fr 1fr;
+    grid-template-areas: 
+    "hea hea hea"
+    "card1 card2 card3"
+    "card4 card5 card6"
+    ;
+}
+
+#tjanst{
+    grid-area: hea;
+    padding: 20px;
+}
+
+
+.card{
+    display: grid;
+    border-radius: 23px; 
+    border-style: solid;
+    border-color: #1abc9c;
+    border-width: 3px;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 120px 120px;
+    grid-template-areas: 
+    "bild"
+    "text";
+
+}
+
+
+.cardimg{
+    grid-area: bild;
+    filter: grayscale(70%);
+    border-radius: 20px 20px 0px 0px;
+    z-index: 1;
+}
+
+.cardimg:hover{
+    filter: grayscale(0%);
+}
+
+.card-text{
+    grid-area: text;
+    background-color: #ffffff;
+    border-radius: 0px 0px 20px 20px;
+    z-index: 2;
+    color: #1abc9c;
+}
+#card1 {
+   
+    grid-area: card1;
+}
+#card2 {
+    grid-area: card2;
+   
+}
+#card3 {
+    grid-area: card3;
+  
+}
+#card4 {
+    grid-area: card4;
+    
+}
+#card5 {
+    grid-area: card5;
+  
+}
+#card6 {
+    grid-area: card6;
+  
+}
+
+#sok
